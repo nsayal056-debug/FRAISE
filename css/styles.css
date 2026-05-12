@@ -57,6 +57,7 @@ header {
 }
 
 .logo {
+    
     background-image: url(../img/logo.jpg);
     width: 220px;
     transition: 0.3s;

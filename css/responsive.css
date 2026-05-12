@@ -1,0 +1,276 @@
+/* ========================================= */
+/* RESPONSIVE GLOBAL */
+/* ========================================= */
+
+/* TABLETS GRANDES */
+
+@media (max-width: 1200px) {
+
+    .hero-content h1,
+    .hero-contacto-content h1,
+    .hero-alta-content h1,
+    .hero-nosotros-content h1 {
+        font-size: 3.5rem;
+    }
+
+}
+
+/* ========================================= */
+/* TABLETS */
+/* ========================================= */
+
+@media (max-width: 992px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    /* HERO */
+
+    .hero-content h1,
+    .hero-contacto-content h1,
+    .hero-alta-content h1,
+    .hero-nosotros-content h1 {
+        font-size: 3rem;
+    }
+
+    /* SECCIONES */
+
+    .contacto-container,
+    .alta-container,
+    .nosotros-container {
+        flex-direction: column;
+    }
+
+    /* CARDS */
+
+    .cards-container,
+    .productos-container,
+    .valores-container {
+        justify-content: center;
+    }
+
+}
+
+/* ========================================= */
+/* MOBILE */
+/* ========================================= */
+
+@media (max-width: 768px) {
+
+    /* BODY */
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+
+    header {
+        padding: 10px 5%;
+    }
+
+    /* NAVBAR */
+
+    .navbar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 18px;
+
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+    }
+
+    /* LOGO */
+
+    .logo {
+        max-width: 140px;
+    }
+
+    /* HERO */
+
+    .hero,
+    .hero-contacto,
+    .hero-alta,
+    .hero-nosotros {
+        height: 35vh;
+    }
+
+    .hero-content,
+    .hero-contacto-content,
+    .hero-alta-content,
+    .hero-nosotros-content {
+        padding: 20px;
+    }
+
+    .hero-content h1,
+    .hero-contacto-content h1,
+    .hero-alta-content h1,
+    .hero-nosotros-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p,
+    .hero-contacto-content p,
+    .hero-alta-content p,
+    .hero-nosotros-content p {
+        font-size: 1rem;
+    }
+
+    /* SECCIONES */
+
+    .contacto-section,
+    .alta-section,
+    .nosotros-section,
+    .valores-section {
+        padding: 60px 6%;
+    }
+
+    /* FORMULARIOS */
+
+    .contacto-formulario,
+    .alta-formulario {
+        width: 100%;
+
+        padding: 30px 20px;
+    }
+
+    /* INPUTS */
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 0.95rem;
+    }
+
+    /* CARDS */
+
+    .product-card,
+    .valor-card {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .footer-links,
+    .footer-info,
+    .footer-brand,
+    .redes-sociales {
+        width: 100%;
+    }
+
+    /* IMAGENES */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/* ========================================= */
+/* SMALL MOBILE */
+/* ========================================= */
+
+@media (max-width: 480px) {
+
+    /* HERO */
+
+    .hero-content h1,
+    .hero-contacto-content h1,
+    .hero-alta-content h1,
+    .hero-nosotros-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p,
+    .hero-contacto-content p,
+    .hero-alta-content p,
+    .hero-nosotros-content p {
+        font-size: 0.95rem;
+    }
+
+    /* TITULOS */
+
+    .nosotros-info h2,
+    .alta-info h2,
+    .contacto-info h2,
+    .valores-section h2 {
+        font-size: 2rem;
+    }
+
+    /* BOTONES */
+
+    .btn-enviar,
+    .btn-producto,
+    .btn-comprar {
+        width: 100%;
+    }
+
+    /* CARDS */
+
+    .product-card,
+    .valor-card {
+        padding: 25px 20px;
+    }
+
+    /* FOOTER */
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+
+}
+
+/* ========================================= */
+/* EXTRA SMALL */
+/* ========================================= */
+
+@media (max-width: 360px) {
+
+    .hero-content h1,
+    .hero-contacto-content h1,
+    .hero-alta-content h1,
+    .hero-nosotros-content h1 {
+        font-size: 1.7rem;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+}

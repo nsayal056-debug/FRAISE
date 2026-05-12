@@ -32,6 +32,8 @@ body {
     background-color: var(--color-light);
 
     color: var(--color-dark);
+
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -68,6 +70,12 @@ header {
 
 .navbar {
     display: flex;
+
+    overflow-x: hidden;
+
+    flex-wrap: wrap;
+
+    width: 100%;
 
     justify-content: center;
 }

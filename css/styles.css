@@ -1,0 +1,330 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+
+    --color-primary: #1d4052;
+    --color-secondary: #72a3bf;
+    --color-accent: #446e87;
+
+    --color-light: #ffecef;
+    --color-soft: #e0e8e6;
+
+    --color-dark: #030f18;
+    --color-white: #ffffff;
+
+    --font-title: "Playfair Display", serif;
+    --font-text: "Poppins", sans-serif;
+}
+
+/* BODY */
+
+body {
+
+    font-family: var(--font-text);
+
+    background-color: var(--color-light);
+
+    color: var(--color-dark);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--color-white);
+
+    padding: 20px 40px;
+
+    border-bottom: 1px solid #d9d9d9;
+}
+
+/* LOGO */
+
+.logo-container {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 220px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.03);
+    opacity: 0.9;   
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 40px;
+
+    list-style: none;
+}
+
+.nav-links a {
+
+    text-decoration: none;
+
+    color: var(--color-primary);
+
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover  {
+    
+    color: var(--color-secondary);
+}
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    background-color: var(--color-primary);
+
+    color: white;
+
+   padding-top: 60px;
+}
+
+.footer-container{
+    width: 80%;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 60px 40px;
+
+    display: flex;
+    
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+
+    gap: 40px;
+}
+
+.footer-brand{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.footer-logo{
+
+    width: 180px;
+}
+
+.footer-brand p{
+
+    color: rgba(255,255,255,0.8);
+
+    line-height: 1.7;
+}
+
+.footer-info h3,
+.footer-links h3{
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-title);
+
+    font-size: 1.5rem;
+}
+
+.footer-info p{
+
+    margin-bottom: 12px;
+
+    color: rgba(255,255,255,0.8);
+}
+
+.footer-links{
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.footer-links a{
+
+    color: rgba(255,255,255,0.8);
+
+    text-decoration: none;
+
+    margin-bottom: 12px;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+
+    color: var(--color-secondary);
+
+    transform: translateX(5px);
+}
+
+.footer-bottom{
+
+    border-top: 1px solid rgba(255,255,255,0.15);
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: rgba(255,255,255,0.7);
+
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE FOOTER */
+
+@media(max-width: 768px){
+
+    .footer-container{
+
+        padding: 50px 25px;
+    }
+
+    .footer-logo{
+
+        width: 150px;
+    }
+
+}
+
+/* BOTON WPP */
+
+.whatsapp-btn {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+/* REDES SOCIALES */
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 80px;
+}
+
+.red-social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.redes-sociales h3{
+
+    margin-bottom: 20px;
+
+    font-family: var(--font-title);
+
+    font-size: 1.5rem;
+}
+
+.red-social img{
+    width: 22px;
+    height: 22px;
+}
+
+.red-social p{
+
+    margin: 0;
+
+    font-size: 17px;
+
+    font-family: var(--font-text);
+
+    color: rgba(255,255,255,0.8);
+}
+
+.btn-volver{
+
+    transform: translateX(20px);
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 70px auto 0;
+
+    padding: 14px 34px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #8b5e3c,
+        #c89b6d
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 8px 18px rgba(0,0,0,0.15);
+}
+
+.btn-volver:hover{
+
+    transform: translateY(-3px);
+
+    box-shadow:
+    0 12px 24px rgba(0,0,0,0.2);
+}

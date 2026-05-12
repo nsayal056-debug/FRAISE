@@ -1,0 +1,392 @@
+/* =========================
+   PAGINA FRAMBALI
+========================= */
+
+.frambali-page{
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff5f7,
+        #fdecef
+    );
+}
+
+/* =========================
+   CARD PRINCIPAL
+========================= */
+
+.frambali-card{
+
+    max-width: 1400px;
+
+    margin: 80px auto;
+
+    padding: 60px;
+
+    border-radius: 40px;
+
+    background: rgba(255,255,255,0.78);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+    0 25px 60px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   TOP CARD
+========================= */
+
+.frambali-top{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 100px;
+
+    margin-bottom: 60px;
+}
+
+/* =========================
+   IMAGEN
+========================= */
+
+.detalle-img{
+
+    flex: 1.2;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.detalle-img img{
+
+    width: 700px;
+
+    height: 700px;
+
+    object-fit: cover;
+
+    border-radius: 40px;
+
+    border: 12px solid rgba(255,255,255,0.95);
+
+    background: white;
+
+    box-shadow:
+    0 35px 70px rgba(0,0,0,0.20);
+
+    transition: 0.4s ease;
+}
+
+.detalle-img img:hover{
+
+    transform: scale(1.02);
+}
+
+/* =========================
+   INFO
+========================= */
+
+.detalle-info{
+
+    flex: 1;
+
+    text-align: center;
+
+    margin: auto;
+
+    max-width: 520px;
+}
+
+.detalle-info h1{
+
+    font-size: 4rem;
+
+    font-family: var(--font-title);
+
+    color: var(--color-primary);
+
+    margin-bottom: 20px;
+}
+
+.precio{
+
+    font-size: 2.2rem;
+
+    font-weight: bold;
+
+    color: #d4af37;
+
+    margin-bottom: 25px;
+}
+
+.detalle-info p{
+
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+.detalle-info ul{
+    
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    list-style: none;
+
+    padding: 0;
+}
+
+.detalle-info li{
+
+    margin-bottom: 15px;
+
+    font-size: 1rem;
+
+    color: #444;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.contacto-form{
+
+    border-top: 1px solid rgba(0,0,0,0.08);
+
+    padding-top: 50px;
+
+    margin-top: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    max-width: 700px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+}
+
+/* CAMPOS */
+
+.form-group{
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-group label{
+
+    margin-bottom: 10px;
+
+    font-weight: 600;
+
+    color: var(--color-primary);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width: 100%;
+
+    padding: 16px 18px;
+
+    border: 2px solid #dddddd;
+
+    border-radius: 18px;
+
+    background: white;
+
+    font-size: 1rem;
+
+    font-family: var(--font-text);
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.04);
+}
+
+.form-group textarea{
+
+    min-height: 140px;
+
+    resize: vertical;
+}
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder{
+
+    color: #999;
+}
+
+/* FOCUS */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    outline: none;
+
+    border-color: #d4af37;
+
+    box-shadow:
+    0 0 18px rgba(212,175,55,0.22);
+}
+
+/* =========================
+   BOTON
+========================= */
+
+.btn-submit{
+
+    margin-top: 15px;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #d4af37,
+        #b8962e
+    );
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 12px 25px rgba(212,175,55,0.25);
+}
+
+.btn-submit:hover{
+
+    transform: translateY(-4px);
+
+    box-shadow:
+    0 18px 35px rgba(212,175,55,0.35);
+}
+
+/* =========================
+   BOTON VOLVER
+========================= */
+
+.btn-volver{
+
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding: 14px 34px;
+
+    border-radius: 40px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #8b5e3c,
+        #c89b6d
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,0.15);
+}
+
+.btn-volver:hover{
+
+    transform: translateY(-3px);
+
+    background:
+    linear-gradient(
+        135deg,
+        #9c6a45,
+        #ddb183
+    );
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 1100px){
+
+    .frambali-top{
+
+        flex-direction: column;
+    }
+
+    .detalle-img img{
+
+        width: 100%;
+
+        max-width: 650px;
+
+        height: auto;
+    }
+
+}
+
+@media(max-width: 768px){
+
+    .frambali-card{
+
+        margin: 30px 20px;
+
+        padding: 35px 25px;
+    }
+
+    .detalle-info h1{
+
+        font-size: 2.7rem;
+    }
+
+    .precio{
+
+        font-size: 1.8rem;
+    }
+
+}

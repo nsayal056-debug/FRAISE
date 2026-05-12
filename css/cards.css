@@ -1,0 +1,318 @@
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos{
+
+    padding: 100px 60px;
+
+    background-color: var(--color-soft);
+
+    min-height: 100vh;
+}
+
+/* TITULO */
+
+.productos-title{
+
+    text-align: center;
+
+    font-family: var(--font-title);
+
+    font-size: 60px;
+
+    color: var(--color-primary);
+
+    margin-bottom: 70px;
+}
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categorias{
+
+    padding: 100px 60px;
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(
+        180deg,
+        var(--color-light),
+        var(--color-soft)
+    );
+}
+
+/* GRID CATEGORIAS */
+
+.categorias-container{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px,1fr));
+
+    gap: 40px;
+}
+
+/* CARD CATEGORIA */
+
+.categoria-card{
+
+    position: relative;
+
+    height: 450px;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.4s ease;
+
+    box-shadow:
+    0 12px 35px rgba(0,0,0,0.12);
+}
+
+/* HOVER */
+
+.categoria-card:hover{
+
+    transform:
+    translateY(-10px);
+}
+
+/* IMAGEN */
+
+.categoria-card img{
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.categoria-card:hover img{
+
+    transform: scale(1.05);
+}
+
+/* OVERLAY */
+
+.categoria-card::after{
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.10)
+    );
+}
+
+/* TITULO CATEGORIA */
+
+.categoria-card h2{
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 35px;
+
+    z-index: 2;
+
+    color: white;
+
+    font-size: 2.3rem;
+
+    font-family: var(--font-title);
+
+    text-shadow:
+    0 4px 12px rgba(0,0,0,0.45);
+}
+
+/* =========================
+   GRID PRODUCTOS
+========================= */
+
+.productos-container{
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px,1fr));
+
+    gap: 40px;
+}
+
+/* =========================
+   CARD PRODUCTO
+========================= */
+
+.producto-card{
+
+    position: relative;
+
+    background: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    padding: 20px;
+
+    padding-bottom: 85px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    transition: 0.4s ease;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+}
+
+.producto-card:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 20px 45px rgba(0,0,0,0.14);
+}
+
+/* IMAGEN */
+
+.producto-card img{
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: 0.5s ease;
+}
+
+.producto-card:hover img{
+
+    transform: scale(1.03);
+}
+
+/* TITULO */
+
+.producto-card h2{
+
+    margin-top: 20px;
+
+    margin-bottom: 15px;
+
+    font-size: 2rem;
+
+    font-family: var(--font-title);
+
+    color: var(--color-primary);
+}
+
+/* DESCRIPCION */
+
+.producto-card p{
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   BOTON VER MAS
+========================= */
+
+.btn-ver{
+
+    position: absolute;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    padding: 10px 22px;
+
+    border-radius: 30px;
+
+    background: #d4af37;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 8px 18px rgba(212,175,55,0.3);
+}
+
+.btn-ver:hover{
+
+    background: #b8962e;
+
+    transform: translateY(-3px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .productos,
+    .categorias{
+
+        padding: 80px 25px;
+    }
+
+    .productos-title{
+
+        font-size: 42px;
+    }
+
+    .categorias-container,
+    .productos-container{
+
+        gap: 30px;
+    }
+
+    .categoria-card{
+
+        height: 340px;
+    }
+
+    .categoria-card h2{
+
+        font-size: 2rem;
+    }
+
+    .producto-card img{
+
+        height: 260px;
+    }
+}

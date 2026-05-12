@@ -84,6 +84,8 @@
     header {
         padding: 10px 5%;
     }
+    }
+
 
     /* NAVBAR */
 
@@ -208,10 +210,16 @@
 
     /* IMAGENES */
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+    body:not(.frambali-page) img {
+
+    max-width: 100%;
+
+    height: auto;
+}
+
+body:not(.frambali-page) .form-group {
+    
+    width: 100%;
 
 }
 

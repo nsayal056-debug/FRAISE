@@ -390,3 +390,29 @@
     }
 
 }
+
+/* =========================================
+   FIX MOBILE FRAMBALI
+========================================= */
+
+.frambali-page .detalle-info ul{
+
+    width: auto;
+}
+
+.frambali-page .detalle-info li{
+
+    width: auto;
+}
+
+.frambali-page .contacto-form{
+
+    width: 100%;
+}
+
+.frambali-page .detalle-img img{
+
+    max-width: 100%;
+
+    height: auto;
+}

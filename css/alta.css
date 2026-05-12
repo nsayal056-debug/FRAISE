@@ -1,0 +1,268 @@
+/* ========================================= */
+/* HERO ALTA */
+/* ========================================= */
+
+.hero-alta {
+    width: 100%;
+    height: 45vh;
+
+    background-image: url("../img/fondo-alta.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-alta-overlay {
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-alta-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-alta-content h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-alta-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* ========================================= */
+/* ALTA SECTION */
+/* ========================================= */
+
+.alta-section {
+    width: 100%;
+
+    padding: 80px 10%;
+
+    background-color: #fff8f5;
+}
+
+.alta-container {
+    display: flex;
+    gap: 60px;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+/* ========================================= */
+/* INFO */
+/* ========================================= */
+
+.alta-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.alta-info h2 {
+    font-size: 2.5rem;
+
+    color: #5c4033;
+
+    margin-bottom: 20px;
+
+    font-family: 'Playfair Display', serif;
+}
+
+.alta-info p {
+    color: #666;
+
+    line-height: 1.7;
+}
+
+/* ========================================= */
+/* FORMULARIO */
+/* ========================================= */
+
+.alta-formulario {
+    flex: 1;
+    min-width: 320px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.alta-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ========================================= */
+/* FORM GROUP */
+/* ========================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+
+    color: #5c4033;
+
+    font-weight: 600;
+}
+
+/* INPUTS */
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e5d6d6;
+    border-radius: 12px;
+
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+/* TEXTAREAS */
+
+.form-group textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+/* FOCUS */
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #d48fa1;
+
+    box-shadow: 0 0 8px rgba(212, 143, 161, 0.3);
+}
+
+/* VALIDACIONES */
+
+.form-group input:invalid,
+.form-group textarea:invalid,
+.form-group select:invalid {
+    border-color: #ff9c9c;
+}
+
+/* FILE INPUT */
+
+.form-group input[type="file"] {
+    padding: 12px;
+
+    background-color: #fafafa;
+
+    cursor: pointer;
+}
+
+/* ========================================= */
+/* BOTON */
+/* ========================================= */
+
+.btn-enviar {
+    padding: 15px;
+
+    border: none;
+    border-radius: 14px;
+
+    background-color: #d48fa1;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #bf7387;
+
+    transform: translateY(-2px);
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media (max-width: 992px) {
+
+    .alta-container {
+        flex-direction: column;
+    }
+
+    .hero-alta-content h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-alta {
+        height: 35vh;
+    }
+
+    .hero-alta-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-alta-content p {
+        font-size: 1rem;
+    }
+
+    .alta-section {
+        padding: 60px 6%;
+    }
+
+    .alta-formulario {
+        padding: 30px 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-alta-content h1 {
+        font-size: 2rem;
+    }
+
+    .alta-info h2 {
+        font-size: 2rem;
+    }
+
+}

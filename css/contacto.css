@@ -1,0 +1,264 @@
+/* ========================================= */
+/* HERO CONTACTO */
+/* ========================================= */
+
+.hero-contacto {
+    width: 100%;
+    height: 45vh;
+
+    background-image: url("../img/fondo-contacto.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-contacto-overlay {
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-contacto-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-contacto-content h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-contacto-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* ========================================= */
+/* CONTACTO */
+/* ========================================= */
+
+.contacto-section {
+    width: 100%;
+    padding: 80px 10%;
+    background-color: #fff8f5;
+}
+
+.contacto-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ========================================= */
+/* INFO */
+/* ========================================= */
+
+.contacto-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contacto-info h2 {
+    font-size: 2.5rem;
+    color: #5c4033;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contacto-info p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contacto-datos {
+    margin-top: 30px;
+}
+
+.contacto-datos p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 18px;
+
+    color: #444;
+    font-weight: 500;
+}
+
+.contacto-datos i {
+    color: #d48fa1;
+    font-size: 1.1rem;
+}
+
+/* ========================================= */
+/* FORMULARIO */
+/* ========================================= */
+
+.contacto-formulario {
+    flex: 1;
+    min-width: 320px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ========================================= */
+/* FORM GROUP */
+/* ========================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+
+    color: #5c4033;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e5d6d6;
+    border-radius: 12px;
+
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+/* INPUT FOCUS */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d48fa1;
+
+    box-shadow: 0 0 8px rgba(212, 143, 161, 0.3);
+}
+
+/* TEXTAREA */
+
+.form-group textarea {
+    resize: none;
+    min-height: 150px;
+}
+
+/* VALIDACIONES */
+
+.form-group input:invalid,
+.form-group textarea:invalid {
+    border-color: #ff8a8a;
+}
+
+/* ========================================= */
+/* BOTON */
+/* ========================================= */
+
+.btn-enviar {
+    padding: 15px;
+
+    border: none;
+    border-radius: 14px;
+
+    background-color: #d48fa1;
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #bf7387;
+
+    transform: translateY(-2px);
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media (max-width: 992px) {
+
+    .hero-contacto-content h1 {
+        font-size: 3rem;
+    }
+
+    .contacto-container {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-contacto {
+        height: 35vh;
+    }
+
+    .hero-contacto-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-contacto-content p {
+        font-size: 1rem;
+    }
+
+    .contacto-section {
+        padding: 60px 6%;
+    }
+
+    .contacto-formulario {
+        padding: 30px 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-contacto-content h1 {
+        font-size: 2rem;
+    }
+
+    .contacto-info h2 {
+        font-size: 2rem;
+    }
+
+}

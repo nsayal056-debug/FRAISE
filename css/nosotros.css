@@ -1,0 +1,225 @@
+/* ========================================= */
+/* HERO */
+/* ========================================= */
+
+.hero-nosotros {
+    width: 100%;
+    height: 45vh;
+
+    background-image: url("../img/fondo-nosotros.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-nosotros-overlay {
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-nosotros-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-nosotros-content h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-nosotros-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* ========================================= */
+/* NOSOTROS */
+/* ========================================= */
+
+.nosotros-section {
+    padding: 80px 10%;
+    background-color: #fff8f5;
+}
+
+.nosotros-container {
+    display: flex;
+    gap: 60px;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+/* IMAGEN */
+
+.nosotros-img {
+    flex: 1;
+    min-width: 320px;
+}
+
+.nosotros-img img {
+    width: 100%;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* INFO */
+
+.nosotros-info {
+    flex: 1;
+    min-width: 320px;
+}
+
+.nosotros-info h2 {
+    font-size: 2.8rem;
+
+    color: #5c4033;
+
+    margin-bottom: 25px;
+
+    font-family: 'Playfair Display', serif;
+}
+
+.nosotros-info p {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+/* ========================================= */
+/* VALORES */
+/* ========================================= */
+
+.valores-section {
+    padding: 80px 10%;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.valores-section h2 {
+    font-size: 2.8rem;
+
+    margin-bottom: 50px;
+
+    color: #5c4033;
+
+    font-family: 'Playfair Display', serif;
+}
+
+.valores-container {
+    display: flex;
+    gap: 30px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+
+.valor-card {
+    background-color: #fff8f5;
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    width: 320px;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.valor-card:hover {
+    transform: translateY(-5px);
+}
+
+.valor-card i {
+    font-size: 2.5rem;
+
+    color: #d48fa1;
+
+    margin-bottom: 20px;
+}
+
+.valor-card h3 {
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+
+    color: #5c4033;
+}
+
+.valor-card p {
+    color: #666;
+
+    line-height: 1.7;
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media (max-width: 992px) {
+
+    .hero-nosotros-content h1 {
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-nosotros {
+        height: 35vh;
+    }
+
+    .hero-nosotros-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-nosotros-content p {
+        font-size: 1rem;
+    }
+
+    .nosotros-section,
+    .valores-section {
+        padding: 60px 6%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .hero-nosotros-content h1 {
+        font-size: 2rem;
+    }
+
+    .nosotros-info h2,
+    .valores-section h2 {
+        font-size: 2rem;
+    }
+
+}

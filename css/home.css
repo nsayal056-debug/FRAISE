@@ -9,6 +9,8 @@
     background-position: center;
     
     position: relative;
+
+    padding-block: 80px;
 }
 
 .hero-overlay{

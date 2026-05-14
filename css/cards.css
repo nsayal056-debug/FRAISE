@@ -9,6 +9,8 @@
     background-color: var(--color-soft);
 
     min-height: 100vh;
+
+    padding-block: 80px;
 }
 
 /* TITULO */
@@ -182,7 +184,7 @@
 
     overflow: hidden;
 
-    transition: 0.4s ease;
+    transition: 0.35s ease;
 
     box-shadow:
     0 10px 25px rgba(0,0,0,0.08);
@@ -191,10 +193,10 @@
 .producto-card:hover{
 
     transform:
-    translateY(-10px);
+    translateY(-8px);
 
     box-shadow:
-    0 20px 45px rgba(0,0,0,0.14);
+    0 16px 32px rgba(0,0,0,0.15);
 }
 
 /* IMAGEN */

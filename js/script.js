@@ -128,3 +128,18 @@ formulario.addEventListener(
 
     }
 );
+
+const btnComprar = document.getElementById("btnComprar");
+
+const mensajeCompra = document.getElementById("mensajeCompra");
+
+btnComprar.addEventListener("click", () => {
+
+    mensajeCompra.classList.add("activo");
+
+    setTimeout(() => {
+
+        mensajeCompra.classList.remove("activo");
+
+    }, 3000);
+});

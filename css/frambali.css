@@ -314,11 +314,11 @@
 
     border-radius: 40px;
 
-    background:
+  background:
     linear-gradient(
         135deg,
-        #8b5e3c,
-        #c89b6d
+        #d88fa3,
+        #e8b7c3
     );
 
     color: white;
@@ -337,11 +337,11 @@
 
     transform: translateY(-3px);
 
-    background:
+     background:
     linear-gradient(
         135deg,
-        #9c6a45,
-        #ddb183
+        #cf8097,
+        #eab8c5
     );
 
     box-shadow:
@@ -415,4 +415,92 @@
     max-width: 100%;
 
     height: auto;
+}
+
+/* =========================
+   MENSAJE COMPRA
+========================= */
+
+.mensaje-compra{
+
+    margin-top: 20px;
+
+    padding: 14px 22px;
+
+    border-radius: 16px;
+
+    background-color: #fce7ee;
+
+    color: #b85c7a;
+
+    text-align: center;
+
+    font-weight: 500;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition: 0.4s ease;
+
+    pointer-events: none;
+}
+
+.mensaje-compra.activo{
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =========================
+   BOTON COMPRAR
+========================= */
+
+.btn-comprar{
+
+    margin-top: 25px;
+
+    padding: 16px 38px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #d88fa3,
+        #e8b7c3
+    );
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    font-family: var(--font-text);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+    0 10px 22px rgba(216,143,163,0.28);
+}
+
+.btn-comprar:hover{
+
+    transform: translateY(-3px);
+
+    background:
+    linear-gradient(
+        135deg,
+        #cf8097,
+        #eab8c5
+    );
+
+    box-shadow:
+    0 15px 30px rgba(216,143,163,0.35);
 }

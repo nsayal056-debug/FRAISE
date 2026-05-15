@@ -129,17 +129,24 @@ formulario.addEventListener(
     }
 );
 
-const btnComprar = document.getElementById("btnComprar");
+const formularioCompra = document.getElementById("formCompra");
 
 const mensajeCompra = document.getElementById("mensajeCompra");
 
-btnComprar.addEventListener("click", () => {
+if(formularioCompra){
 
-    mensajeCompra.classList.add("activo");
+    formularioCompra.addEventListener("submit", (e) => {
 
-    setTimeout(() => {
+        e.preventDefault();
 
-        mensajeCompra.classList.remove("activo");
+        mensajeCompra.classList.add("activo");
 
-    }, 3000);
-});
+        formularioCompra.reset();
+
+        setTimeout(() => {
+
+            mensajeCompra.classList.remove("activo");
+
+        }, 3000);
+    });
+}

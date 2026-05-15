@@ -99,6 +99,15 @@
     object-fit: cover;
 
     transition: 0.5s ease;
+
+    object-position: center top;
+}
+
+.tortas-basicas-card img{
+
+    object-fit: cover;
+
+    object-position: center 35%;
 }
 
 .categoria-card:hover img{
@@ -259,7 +268,7 @@
 
     border-radius: 30px;
 
-    background: #d4af37;
+   background-color: #e8b7c3;
 
     color: white;
 
@@ -275,7 +284,7 @@
 
 .btn-ver:hover{
 
-    background: #b8962e;
+    background: #d88fa3;
 
     transform: translateY(-3px);
 }

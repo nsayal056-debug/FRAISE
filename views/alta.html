@@ -1,106 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>Alta de Productos | FRAISE Pastelería</title>
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="./css/responsive.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/alta.css">
-
-    <!-- Google Fonts -->
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-</head>
-
-<body>
-
-    <!-- BOTON WHATSAPP -->
-
-    <a href="https://wa.me/5492478466498?text=Hola!! 😊 Me gustaría consultar por una torta personalizada 🎂✨"
-        class="whatsapp-btn"
-        target="_blank">
-
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
-            alt="WhatsApp">
-
-    </a>
-
-    <!-- HEADER -->
-
-    <header>
-
-        <div class="logo-container">
-
-            <a href="./index.html">
-
-                <img src="./img/Logo.jpg"
-                    alt="Logo FRAISE"
-                    class="logo">
-
-            </a>
-
-        </div>
-
-        <!-- NAVBAR -->
-
-        <nav class="navbar">
-
-            <ul class="nav-links">
-
-                <li>
-                    <a href="./index.html">Fraise</a>
-                </li>
-
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-
-                <li>
-                    <a href="./alta.html" class="active">Alta</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-    </header>
-
-    <!-- MAIN -->
-
-    <main>
-
-        <!-- HERO -->
+<!-- HERO -->
 
         <section class="hero-alta">
 
@@ -135,8 +33,7 @@
                     </h2>
 
                     <p>
-                        Completá todos los campos para registrar correctamente un nuevo producto
-                        dentro del catálogo de la pastelería.
+                        Completá todos los campos para registrar correctamente un nuevo producto dentro del catálogo de la pastelería. Las validaciones se muestran al salir de cada campo y antes de enviar.
                     </p>
 
                 </div>
@@ -145,7 +42,7 @@
 
                 <div class="alta-formulario">
 
-                    <form>
+                    <form id="form-alta" novalidate>
 
                         <!-- NOMBRE -->
 
@@ -155,13 +52,14 @@
                                 Nombre del producto
                             </label>
 
-                            <input type="text"
-                            name="nombre"
-                            required
-                            minlength="3"
-                            maxlength="40"
-                            placeholder="Nombre del producto">
-
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                required
+                                minlength="3"
+                                maxlength="40"
+                                placeholder="Nombre del producto">
                         </div>
 
                         <!-- PRECIO -->
@@ -172,13 +70,14 @@
                                 Precio
                             </label>
 
-                            <input type="number"
-                            name="precio"
-                            required
-                            min="1"
-                            max="999999"
-                            placeholder="$">
-
+                            <input
+                                type="number"
+                                id="precio"
+                                name="precio"
+                                required
+                                min="1"
+                                max="999999"
+                                placeholder="$">
                         </div>
 
                         <!-- STOCK -->
@@ -189,11 +88,13 @@
                                 Stock disponible
                             </label>
 
-                            <input type="number"
-                            name="stock"
-                            required
-                            min="0"
-                            max="9999">
+                            <input
+                                type="number"
+                                id="stock"
+                                name="stock"
+                                required
+                                min="0"
+                                max="9999">
 
                         </div>
 
@@ -205,7 +106,9 @@
                                 Marca
                             </label>
 
-                            <input type="text"
+                            <input 
+                            type="text"
+                            id="marca"
                             name="marca"
                             required
                             minlength="2"
@@ -257,7 +160,8 @@
                                 Descripción corta
                             </label>
 
-                            <textarea id="descripcion-corta"
+                            <textarea 
+                                id="descripcion-corta"
                                 name="descripcion-corta"
                                 placeholder="Breve descripción del producto..."
                                 required
@@ -274,7 +178,8 @@
                                 Descripción larga
                             </label>
 
-                            <textarea id="descripcion-larga"
+                            <textarea 
+                                id="descripcion-larga"
                                 name="descripcion-larga"
                                 placeholder="Descripción completa del producto..."
                                 required
@@ -291,8 +196,9 @@
                                 ¿Envío sin cargo?
                             </label>
 
-                            <select id="envio"
-                                name="envio"
+                            <select 
+                                id="envioSinCargo"
+                                name="envioSinCargo"
                                 required>
 
                                 <option value="">
@@ -319,7 +225,8 @@
                                 Edad desde
                             </label>
 
-                            <input type="number"
+                            <input 
+                                type="number"
                                 id="edad-desde"
                                 name="edad-desde"
                                 placeholder="0"
@@ -337,7 +244,8 @@
                                 Edad hasta
                             </label>
 
-                            <input type="number"
+                            <input 
+                                type="number"
                                 id="edad-hasta"
                                 name="edad-hasta"
                                 placeholder="99"
@@ -355,7 +263,7 @@
                                 Foto del producto
                             </label>
 
-                            <input type="file"
+                            <input type="url"
                                 id="foto"
                                 name="foto"
                                 accept=".jpg, .jpeg, .png, .webp"
@@ -379,123 +287,3 @@
             </div>
 
         </section>
-
-    </main>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-
-        <div class="footer-container">
-
-            <!-- MARCA -->
-
-            <div class="footer-brand">
-
-                <img src="./img/Logo.jpg"
-                    alt="Logo FRAISE"
-                    class="footer-logo">
-
-                <p>
-                    Sabores que celebran momentos.
-                </p>
-
-            </div>
-
-            <!-- REDES -->
-
-            <div class="redes-sociales">
-
-                <h3>
-                    Redes
-                </h3>
-
-                <a href="https://www.instagram.com/fraise.pasteleria/"
-                    target="_blank"
-                    class="red-social">
-
-                    <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png"
-                        alt="Instagram">
-
-                    <p>
-                        Instagram
-                    </p>
-
-                </a>
-
-                <a href="https://wa.me/5492478466498?text=Hola!! 😊 Me gustaría consultar por una torta personalizada 🎂✨"
-                    target="_blank"
-                    class="red-social">
-
-                    <img src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png"
-                        alt="WhatsApp">
-
-                    <p>
-                        WhatsApp
-                    </p>
-
-                </a>
-
-            </div>
-
-            <!-- CONTACTO -->
-
-            <div class="footer-info">
-
-                <h3>
-                    Contacto
-                </h3>
-
-                <p>
-                    Arrecifes, Buenos Aires
-                </p>
-
-                <p>
-                    +54 9 2478 46-6498
-                </p>
-
-                <p>
-                    fraisepasteleria69@gmail.com
-                </p>
-
-            </div>
-
-            <!-- LINKS -->
-
-            <div class="footer-links">
-
-                <h3>
-                    Navegación
-                </h3>
-
-                <a href="./index.html">Inicio</a>
-                <a href="./productos.html">Productos</a>
-                <a href="./nosotros.html">Nosotros</a>
-                <a href="./contacto.html">Contacto</a>
-                <a href="./alta.html">Alta</a>
-
-            </div>
-
-        </div>
-
-        <!-- COPYRIGHT -->
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 FRAISE Pastelería - Todos los derechos reservados
-            </p>
-
-        </div>
-
-    </footer>
-
-    <!-- JS -->
-
-    <script src="./js/auth.js"></script>
-
-    <script src="./js/script.js"></script>
-
-</body>
-
-</html>

@@ -1,0 +1,71 @@
+<section class="detalle-producto">
+
+  <div class="detalle-img">
+    <img src="./img/Tortas Modernas/Torta Frambali.jpeg" alt="Torta Frambalí">
+  </div>
+
+  <div class="detalle-info">
+
+    <h1>Frambalí</h1>
+
+    <p class="precio">Desde $28.000</p>
+
+    <p>
+      Torta premium de chocolate, frutos rojos y crema suave.
+      Decoración moderna, elegante y artesanal.
+    </p>
+
+    <ul>
+      <li>✔ Chocolate premium</li>
+      <li>✔ Frambuesas frescas</li>
+      <li>✔ Decoración personalizada</li>
+      <li>✔ Ideal para eventos</li>
+    </ul>
+
+    <form class="contacto-form" id="formCompra">
+
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" required>
+      </div>
+
+      <div class="form-group">
+        <label for="porciones">Cantidad de porciones</label>
+        <select id="porciones">
+          <option value="10">10 porciones</option>
+          <option value="20">20 porciones</option>
+          <option value="30">30 porciones</option>
+          <option value="40">40 porciones</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">Fecha del evento</label>
+        <input type="date" id="fecha" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Especificaciones</label>
+        <textarea id="mensaje" placeholder="Colores, decoración, temática, dedicatoria..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Precio total</label>
+        <input type="text" id="precio-final" value="$28.000" readonly>
+      </div>
+
+      <button class="btn-comprar" type="submit">Comprar</button>
+
+      <p class="mensaje-compra" id="mensajeCompra">
+        ¡Compra realizada con éxito!
+      </p>
+
+    </form>
+
+    <div class="btn-volver-container">
+      <a href="#/tortas-modernas" class="btn-volver">← Volver</a>
+    </div>
+
+  </div>
+
+</section>

@@ -4,6 +4,10 @@ Aplicación web desarrollada como proyecto de formación en Desarrollo Web.
 
 FRAISE es una tienda online de pastelería que permite explorar diferentes categorías de productos, consultar información detallada y utilizar un carrito de compras.
 
+## 🖼️ Vista previa
+
+![Vista previa de FRAISE Pastelería](./img/fraise-preview.png)
+
 ## 🌐 Demo
 
 👉 https://nsayal056-debug.github.io/FRAISE/

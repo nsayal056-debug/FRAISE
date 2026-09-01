@@ -1,0 +1,644 @@
+/* =========================================
+   TORTAS PERSONALIZADAS
+========================================= */
+
+.tortas-personalizadas-page {
+    min-height: 100vh;
+    padding: 80px 50px;
+
+    background: linear-gradient(
+        180deg,
+        var(--color-light),
+        var(--color-soft)
+    );
+}
+
+
+/* =========================================
+   CARD PRINCIPAL
+========================================= */
+
+.torta-personalizada-card {
+    width: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 45px 50px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 18px 45px rgba(31, 73, 92, 0.12);
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.torta-personalizada-header {
+    max-width: 700px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.torta-personalizada-header h1 {
+    margin: 0 0 10px;
+
+    font-family: var(--font-title);
+    font-size: 2.2rem;
+
+    color: var(--color-primary);
+}
+
+.torta-personalizada-header p {
+    margin: 0 auto 16px;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    color: #555;
+}
+
+.torta-personalizada-aviso {
+    display: inline-block;
+
+    padding: 7px 18px;
+
+    border-radius: 30px;
+
+    background: #f3c0cd;
+
+    color: var(--color-primary);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+#form-torta-personalizada {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px 25px;
+}
+
+
+/* =========================================
+   GRUPOS
+========================================= */
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.form-grupo-completo {
+    grid-column: 1 / -1;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.torta-personalizada-card label {
+    color: var(--color-primary);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUTS / SELECT / TEXTAREA
+========================================= */
+
+.torta-personalizada-card input,
+.torta-personalizada-card select,
+.torta-personalizada-card textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid rgba(31, 73, 92, 0.15);
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    color: #444;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* =========================================
+   FOCUS
+========================================= */
+
+.torta-personalizada-card input:focus,
+.torta-personalizada-card select:focus,
+.torta-personalizada-card textarea:focus {
+    border-color: #e8b7c3;
+
+    background: #fff;
+
+    box-shadow:
+        0 0 0 3px rgba(232, 183, 195, 0.18);
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.torta-personalizada-card select {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+.torta-personalizada-card textarea {
+    resize: vertical;
+
+    min-height: 120px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   PLACEHOLDER
+========================================= */
+
+.torta-personalizada-card input::placeholder,
+.torta-personalizada-card textarea::placeholder {
+    color: #aaa;
+}
+
+
+/* =========================================
+   TEXTO PEQUEÑO
+========================================= */
+
+.torta-personalizada-card small {
+    margin-top: 2px;
+
+    color: #888;
+
+    font-size: 0.78rem;
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   ARCHIVO / FOTO DE REFERENCIA
+========================================= */
+
+.torta-personalizada-card input[type="file"] {
+    padding: 9px;
+
+    background: #fff;
+}
+
+.torta-personalizada-card input[type="file"]::file-selector-button {
+    margin-right: 12px;
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #f3c0cd;
+
+    color: var(--color-primary);
+
+    font-family: inherit;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   CAMPOS "OTRO RELLENO"
+========================================= */
+
+#torta-relleno-otro-1-container,
+#torta-relleno-otro-2-container {
+    padding: 18px;
+
+    border: 1px dashed rgba(232, 183, 195, 0.7);
+
+    border-radius: 16px;
+
+    background: rgba(243, 192, 205, 0.08);
+}
+
+
+/* IMPORTANTE PARA EL ATRIBUTO HIDDEN */
+
+#torta-relleno-otro-1-container[hidden],
+#torta-relleno-otro-2-container[hidden] {
+    display: none;
+}
+
+
+/* =========================================
+   BOTÓN AGREGAR
+========================================= */
+
+.torta-personalizada-acciones {
+    grid-column: 1 / -1;
+
+    margin-top: 8px;
+
+    text-align: center;
+}
+
+#btn-agregar-torta-personalizada {
+    min-width: 230px;
+
+    padding: 13px 28px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #e8b7c3;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(216, 143, 163, 0.28);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#btn-agregar-torta-personalizada:hover {
+    background: #d88fa3;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 11px 22px rgba(216, 143, 163, 0.35);
+}
+
+
+/* =========================================
+   VOLVER
+========================================= */
+
+.tortas-personalizadas-page
+.btn-volver-container {
+    margin-top: 35px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+    .tortas-personalizadas-page {
+        padding: 70px 30px;
+    }
+
+    .torta-personalizada-card {
+        padding: 38px 30px;
+    }
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    .tortas-personalizadas-page {
+        padding: 60px 18px;
+    }
+
+    .torta-personalizada-card {
+        padding: 30px 18px;
+
+        border-radius: 24px;
+    }
+
+    .torta-personalizada-header h1 {
+        font-size: 1.8rem;
+    }
+
+    #form-torta-personalizada {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .form-grupo-completo,
+    .torta-personalizada-acciones {
+        grid-column: 1;
+    }
+
+    #btn-agregar-torta-personalizada {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* =========================================
+   DRAG & DROP - IMAGEN DE REFERENCIA
+========================================= */
+
+.torta-drop-zone {
+    position: relative;
+
+    width: 100%;
+    min-height: 220px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    border: 2px dashed rgba(31, 73, 92, 0.25);
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* CUANDO PASAMOS POR ENCIMA */
+
+.torta-drop-zone:hover {
+    border-color: #e8b7c3;
+
+    background: rgba(243, 192, 205, 0.08);
+}
+
+
+/* CUANDO ESTAMOS ARRASTRANDO UNA FOTO */
+
+.torta-drop-zone.drag-activo {
+    border-color: #d88fa3;
+
+    background: rgba(243, 192, 205, 0.18);
+
+    transform: scale(1.01);
+}
+
+
+/* =========================================
+   CONTENIDO DEL DROP
+========================================= */
+
+.torta-drop-contenido {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    text-align: center;
+}
+
+
+.torta-drop-contenido[hidden] {
+    display: none !important;
+}
+
+
+.torta-drop-icono {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 2.3rem;
+}
+
+
+.torta-drop-contenido p {
+    margin: 0;
+
+    color: var(--color-primary);
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.torta-drop-contenido > span:not(.torta-drop-icono) {
+    color: #999;
+
+    font-size: 0.82rem;
+}
+
+
+.torta-drop-contenido small {
+    margin-top: 4px;
+
+    color: #999;
+
+    font-size: 0.75rem;
+}
+
+
+/* =========================================
+   BOTÓN SELECCIONAR IMAGEN
+========================================= */
+
+#btn-seleccionar-referencia {
+    padding: 9px 18px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #f3c0cd;
+
+    color: var(--color-primary);
+
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+#btn-seleccionar-referencia:hover {
+    background: #e8b7c3;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   VISTA PREVIA
+========================================= */
+
+.torta-preview {
+    position: relative;
+
+    width: 100%;
+    max-width: 420px;
+
+    margin: 0 auto;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 20px rgba(31, 73, 92, 0.12);
+}
+
+
+.torta-preview[hidden] {
+    display: none !important;
+}
+
+
+.torta-preview img {
+    width: 100%;
+    height: 280px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+
+/* =========================================
+   BOTÓN ELIMINAR FOTO
+========================================= */
+
+#btn-eliminar-referencia {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: #555;
+
+    font-size: 1.4rem;
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+#btn-eliminar-referencia:hover {
+    background: #ffffff;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .torta-drop-zone {
+        min-height: 190px;
+
+        padding: 20px 15px;
+    }
+
+
+    .torta-drop-icono {
+        font-size: 2rem;
+    }
+
+
+    .torta-preview {
+        max-width: 100%;
+    }
+
+
+    .torta-preview img {
+        height: 220px;
+    }
+
+}

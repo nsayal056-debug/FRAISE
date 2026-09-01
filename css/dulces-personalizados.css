@@ -1,0 +1,417 @@
+/* =========================================
+   DULCES PERSONALIZADOS
+========================================= */
+
+.dulces-personalizados-page {
+    min-height: 100vh;
+    padding: 80px 50px;
+
+    background: linear-gradient(
+        180deg,
+        var(--color-light),
+        var(--color-soft)
+    );
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.dulces-personalizados-header {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.dulces-personalizados-header h2 {
+    margin-bottom: 10px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    color: #1f495c;
+}
+
+.dulces-personalizados-header p {
+    margin: 0 auto 16px;
+    max-width: 600px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #68777e;
+}
+
+.dulces-personalizados-minimo {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    background: rgba(232, 183, 195, 0.18);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #c77f91;
+}
+
+
+/* =========================================
+   CONTENEDOR DE CARDS
+========================================= */
+
+.dulces-personalizados-container {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.dulce-personalizado-card {
+    position: relative;
+
+    width: 100%;
+    height: 430px;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(31, 73, 92, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.dulce-personalizado-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 38px rgba(31, 73, 92, 0.18);
+}
+
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.dulce-personalizado-imagen {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.dulce-personalizado-imagen img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.dulce-personalizado-card:hover
+.dulce-personalizado-imagen img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   DEGRADADO + INFORMACIÓN
+========================================= */
+
+.dulce-personalizado-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    min-height: 135px;
+
+    padding: 45px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    background: linear-gradient(
+        to top,
+        rgba(15, 32, 40, 0.88) 0%,
+        rgba(15, 32, 40, 0.58) 45%,
+        rgba(15, 32, 40, 0) 100%
+    );
+}
+
+.dulce-personalizado-overlay h3 {
+    margin: 0 0 12px;
+
+    text-align: center;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 23px;
+    font-weight: 600;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   CONTADOR
+========================================= */
+
+.dulce-personalizado-contador {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    padding: 6px 9px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.94);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.dulce-btn {
+    width: 34px;
+    height: 34px;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #e8b7c3;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 21px;
+    font-weight: 500;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.dulce-btn:hover {
+    transform: scale(1.08);
+
+    background: #d99aac;
+}
+
+.dulce-btn:active {
+    transform: scale(0.95);
+}
+
+.dulce-cantidad {
+    min-width: 24px;
+
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #1f495c;
+}
+
+
+/* =========================================
+   RESUMEN
+========================================= */
+
+.dulces-personalizados-resumen {
+    width: 100%;
+    max-width: 550px;
+
+    margin: 38px auto 0;
+
+    padding: 24px 28px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border: 1px solid rgba(232, 183, 195, 0.35);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 25px rgba(31, 73, 92, 0.08);
+}
+
+.dulces-personalizados-resumen p {
+    margin: 0 0 16px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    color: #68777e;
+}
+
+.dulces-personalizados-resumen strong {
+    color: #1f495c;
+}
+
+
+/* =========================================
+   BOTÓN AGREGAR
+========================================= */
+
+#btn-agregar-dulces-personalizados {
+    width: 100%;
+
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #e8b7c3;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        opacity 0.2s ease;
+}
+
+#btn-agregar-dulces-personalizados:not(:disabled):hover {
+    transform: translateY(-2px);
+
+    background: #d99aac;
+}
+
+#btn-agregar-dulces-personalizados:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   VOLVER
+========================================= */
+
+.dulces-personalizados-page
+.btn-volver-container {
+    margin-top: 32px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .dulces-personalizados-container {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .dulce-personalizado-card {
+        height: 440px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .dulces-personalizados-page {
+        padding: 60px 20px;
+    }
+
+    .dulces-personalizados-header h2 {
+        font-size: 26px;
+    }
+
+    .dulces-personalizados-container {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        max-width: 360px;
+    }
+
+    .dulce-personalizado-card {
+        height: 430px;
+    }
+
+    .dulces-personalizados-resumen {
+        padding: 20px;
+    }
+}
+
+.dulces-personalizados-resumen h2 {
+    margin: 0 0 10px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    color: #1f495c;
+}

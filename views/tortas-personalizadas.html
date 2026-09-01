@@ -1,0 +1,489 @@
+<section class="tortas-personalizadas-page">
+
+    <div class="torta-personalizada-card">
+
+        <div class="torta-personalizada-header">
+
+            <h1>Diseñá tu torta 🤍</h1>
+
+            <p>
+                Contanos cómo imaginás tu torta y armamos
+                una propuesta especialmente para vos.
+            </p>
+
+            <span class="torta-personalizada-aviso">
+                Precio a consultar
+            </span>
+
+        </div>
+
+
+        <form id="form-torta-personalizada">
+
+<!-- FECHA -->
+    <div class="form-grupo">
+
+        <label for="torta-fecha">
+        Fecha del evento
+        </label>
+
+        <input
+        type="date"
+        id="torta-fecha"
+        required>
+
+        <small class="torta-fecha-aviso">
+        Los pedidos deben realizarse con un mínimo de 72 horas de anticipación.
+        </small>
+
+    </div>
+
+            <!-- PORCIONES -->
+            <div class="form-grupo">
+
+                <label for="torta-porciones">
+                    Cantidad de porciones
+                </label>
+
+                <select id="torta-porciones" required>
+
+                    <option value="">
+                        Seleccioná una opción
+                    </option>
+
+                    <option value="10">
+                        10 porciones
+                    </option>
+
+                    <option value="20">
+                        20 porciones
+                    </option>
+
+                    <option value="30">
+                        30 porciones
+                    </option>
+
+                    <option value="40">
+                        40 porciones
+                    </option>
+
+                    <option value="50+">
+                        Más de 40 porciones
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- FORMA -->
+            <div class="form-grupo">
+
+                <label for="torta-forma">
+                    Forma de la torta
+                </label>
+
+                <select id="torta-forma" required>
+
+                    <option value="">
+                        Seleccioná una opción
+                    </option>
+
+                    <option value="Redonda">
+                        Redonda
+                    </option>
+
+                    <option value="Cuadrada">
+                        Cuadrada
+                    </option>
+
+                    <option value="Rectangular">
+                        Rectangular
+                    </option>
+
+                    <option value="Corazón">
+                        Corazón
+                    </option>
+
+                    <option value="Otra">
+                        Otra
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- SABOR -->
+            <!-- SABOR -->
+<div class="form-grupo">
+
+    <label for="torta-sabor">
+        Sabor del bizcochuelo
+    </label>
+
+    <select id="torta-sabor" required>
+
+        <option value="">
+            Seleccioná una opción
+        </option>
+
+        <option value="Vainilla">
+            Vainilla
+        </option>
+
+        <option value="Chocolate">
+            Chocolate
+        </option>
+
+        <option value="Marmolado">
+            Marmolado
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- RELLENO 1 -->
+<div class="form-grupo">
+
+    <label for="torta-relleno-1">
+        Primer relleno
+    </label>
+
+    <select id="torta-relleno-1" required>
+
+        <option value="">
+            Seleccioná una opción
+        </option>
+
+        <option value="Dulce de leche con merengues">
+            Dulce de leche con merengues
+        </option>
+
+        <option value="Dulce de leche con chips">
+            Dulce de leche con chips
+        </option>
+
+        <option value="Ganache de chocolate negro">
+            Ganache de chocolate negro
+        </option>
+
+        <option value="Ganache de chocolate blanco">
+            Ganache de chocolate blanco
+        </option>
+
+        <option value="Crema bariloche">
+            Crema bariloche
+        </option>
+
+        <option value="Mousse de chocolate">
+            Mousse de chocolate
+        </option>
+
+        <option value="Mousse de vainilla">
+            Mousse de vainilla
+        </option>
+
+        <option value="Otro">
+            Otro
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- OTRO RELLENO 1 -->
+<div
+    class="form-grupo form-grupo-completo"
+    id="torta-relleno-otro-1-container"
+    hidden
+>
+
+    <label for="torta-relleno-otro-1">
+        ¿Qué relleno te gustaría?
+    </label>
+
+    <input
+        type="text"
+        id="torta-relleno-otro-1"
+        placeholder="Escribí el relleno que te gustaría"
+    >
+
+</div>
+
+
+<!-- RELLENO 2 -->
+<div class="form-grupo">
+
+    <label for="torta-relleno-2">
+        Segundo relleno
+    </label>
+
+    <select id="torta-relleno-2" required>
+
+        <option value="">
+            Seleccioná una opción
+        </option>
+
+        <option value="Dulce de leche con merengues">
+            Dulce de leche con merengues
+        </option>
+
+        <option value="Dulce de leche con chips">
+            Dulce de leche con chips
+        </option>
+
+        <option value="Ganache de chocolate negro">
+            Ganache de chocolate negro
+        </option>
+
+        <option value="Ganache de chocolate blanco">
+            Ganache de chocolate blanco
+        </option>
+
+        <option value="Crema bariloche">
+            Crema bariloche
+        </option>
+
+        <option value="Mousse de chocolate">
+            Mousse de chocolate
+        </option>
+
+        <option value="Mousse de vainilla">
+            Mousse de vainilla
+        </option>
+
+        <option value="Otro">
+            Otro
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- OTRO RELLENO 2 -->
+    <div
+     class="form-grupo form-grupo-completo"
+        id="torta-relleno-otro-2-container"
+        hidden>
+
+        <label for="torta-relleno-otro-2">
+        ¿Qué relleno te gustaría?
+        </label>
+
+        <input
+        type="text"
+        id="torta-relleno-otro-2"
+        placeholder="Escribí el segundo relleno que te gustaría">
+
+    </div>
+
+
+            <!-- COBERTURA -->
+            <div class="form-grupo">
+
+                <label for="torta-cobertura">
+                    Cobertura
+                </label>
+
+                <select id="torta-cobertura" required>
+
+                    <option value="">
+                        Seleccioná una opción
+                    </option>
+
+                    <option value="Buttercream">
+                        Buttercream
+                    </option>
+
+                    <option value="Ganache">
+                        Ganache
+                    </option>
+
+                    <option value="Crema">
+                        Crema
+                    </option>
+
+                    <option value="Crema Bariloche">
+                        Crema Bariloche
+                    </option>
+
+                    <option value="A definir">
+                        A definir
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- COLORES -->
+            <div class="form-grupo">
+
+                <label for="torta-colores">
+                    Colores
+                </label>
+
+                <input
+                    type="text"
+                    id="torta-colores"
+                    placeholder="Ej: blanco, rosa y dorado"
+                >
+
+            </div>
+
+
+            <!-- TEMÁTICA -->
+            <div class="form-grupo form-grupo-completo">
+
+                <label for="torta-tematica">
+                    Temática o estilo
+                </label>
+
+                <input
+                    type="text"
+                    id="torta-tematica"
+                    placeholder="Ej: elegante, flores, fútbol, cumpleaños infantil..."
+                >
+
+            </div>
+
+
+            <!-- TEXTO -->
+            <div class="form-grupo form-grupo-completo">
+
+                <label for="torta-texto">
+                    Texto que querés agregar
+                </label>
+
+                <input
+                    type="text"
+                    id="torta-texto"
+                    placeholder="Ej: Feliz cumple Sofi"
+                >
+
+            </div>
+
+
+          <!-- IMAGEN DE REFERENCIA -->
+<div class="form-grupo form-grupo-completo">
+
+    <label>
+        Imagen de referencia
+    </label>
+
+    <div
+        class="torta-drop-zone"
+        id="torta-drop-zone">
+
+        <input
+            type="file"
+            id="torta-referencia"
+            accept="image/png, image/jpeg, image/webp"
+            hidden>
+
+        <div
+            class="torta-drop-contenido"
+            id="torta-drop-contenido">
+
+            <span class="torta-drop-icono">
+                🖼️
+            </span>
+
+            <p>
+                Arrastrá tu imagen hasta acá
+            </p>
+
+            <span>
+                o
+            </span>
+
+            <button
+                type="button"
+                id="btn-seleccionar-referencia">
+                Seleccionar imagen
+            </button>
+
+            <small>
+                JPG, PNG o WEBP
+            </small>
+
+        </div>
+
+
+        <!-- VISTA PREVIA -->
+
+        <div
+            class="torta-preview"
+            id="torta-preview"
+            hidden>
+
+            <img
+                id="torta-preview-img"
+                src=""
+                alt="Vista previa de referencia">
+
+            <button
+                type="button"
+                id="btn-eliminar-referencia"
+                aria-label="Eliminar imagen">
+                ×
+            </button>
+
+        </div>
+
+    </div>
+
+    <small>
+        Opcional. Podés adjuntar una imagen como inspiración.
+    </small>
+
+</div>
+
+
+            <!-- OBSERVACIONES -->
+            <div class="form-grupo form-grupo-completo">
+
+                <label for="torta-observaciones">
+                    Observaciones
+                </label>
+
+                <textarea
+                    id="torta-observaciones"
+                    rows="5"
+                    placeholder="Contanos cualquier detalle adicional..."
+                ></textarea>
+
+            </div>
+
+
+            <!-- BOTÓN -->
+            <div class="torta-personalizada-acciones">
+
+                <button
+                    type="submit"
+                    id="btn-agregar-torta-personalizada"
+                >
+                    🛒 Agregar al carrito
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <div class="btn-volver-container">
+
+        <a href="#/productos" class="btn-volver">
+            ← Volver
+        </a>
+
+    </div>
+
+</section>

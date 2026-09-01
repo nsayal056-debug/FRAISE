@@ -1,0 +1,521 @@
+/* =========================================
+   COOKIES PERSONALIZADAS
+========================================= */
+
+.cookies-personalizadas-page {
+    min-height: 100vh;
+    padding: 80px 50px;
+
+    background: linear-gradient(
+        180deg,
+        var(--color-light),
+        var(--color-soft)
+    );
+}
+
+
+/* =========================================
+   CARD PRINCIPAL
+========================================= */
+
+.cookies-personalizadas-card {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    align-items: stretch;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 18px 45px rgba(31, 73, 92, 0.12);
+}
+
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.cookies-personalizadas-imagen {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 100%;
+
+    overflow: hidden;
+}
+
+.cookies-personalizadas-imagen img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.cookies-personalizadas-contenido {
+    padding: 38px 42px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.cookies-personalizadas-header {
+    margin-bottom: 28px;
+}
+
+.cookies-personalizadas-header h2 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-title);
+
+    font-size: 2rem;
+
+    color: var(--color-primary);
+}
+
+.cookies-personalizadas-header p {
+    margin: 0 0 14px;
+
+    color: #666;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+}
+
+.cookies-personalizadas-minimo {
+    display: inline-block;
+
+    padding: 7px 16px;
+
+    border-radius: 25px;
+
+    background: #f3c0cd;
+
+    color: var(--color-primary);
+
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+#form-cookies-personalizadas {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================================
+   GRUPOS
+========================================= */
+
+.cookies-personalizadas-grupo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.cookies-personalizadas-grupo label {
+    color: var(--color-primary);
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   INPUT / TEXTAREA
+========================================= */
+
+.cookies-personalizadas-grupo input,
+.cookies-personalizadas-grupo textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid rgba(31, 73, 92, 0.15);
+
+    border-radius: 14px;
+
+    background: #fff;
+
+    color: #444;
+
+    font-family: inherit;
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.cookies-personalizadas-grupo input:focus,
+.cookies-personalizadas-grupo textarea:focus {
+    border-color: #e8b7c3;
+
+    box-shadow:
+        0 0 0 3px rgba(232, 183, 195, 0.18);
+}
+
+.cookies-personalizadas-grupo textarea {
+    resize: vertical;
+
+    min-height: 100px;
+}
+
+.cookies-personalizadas-grupo small {
+    color: #888;
+
+    font-size: 0.76rem;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   CONTADOR
+========================================= */
+
+.cookies-personalizadas-contador {
+    width: fit-content;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 7px 10px;
+
+    border: 1px solid rgba(31, 73, 92, 0.12);
+
+    border-radius: 30px;
+
+    background: #fff;
+}
+
+.cookies-personalizadas-contador button {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f3c0cd;
+
+    color: var(--color-primary);
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.cookies-personalizadas-contador button:hover:not(:disabled) {
+    background: #e8b7c3;
+
+    transform: scale(1.05);
+}
+
+.cookies-personalizadas-contador button:disabled {
+    opacity: 0.4;
+
+    cursor: not-allowed;
+}
+
+#cookies-personalizadas-cantidad {
+    min-width: 28px;
+
+    text-align: center;
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   REFERENCIA POR WHATSAPP
+========================================= */
+
+.cookies-personalizadas-referencia {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    padding: 15px 16px;
+
+    border: 1px dashed rgba(232, 183, 195, 0.7);
+
+    border-radius: 16px;
+
+    background: rgba(243, 192, 205, 0.08);
+}
+
+.cookies-personalizadas-referencia-icono {
+    font-size: 1.5rem;
+}
+
+.cookies-personalizadas-referencia strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--color-primary);
+
+    font-size: 0.9rem;
+}
+
+.cookies-personalizadas-referencia p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 0.82rem;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   PRECIO
+========================================= */
+
+.cookies-personalizadas-precio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 13px 16px;
+
+    border-radius: 14px;
+
+    background: rgba(31, 73, 92, 0.05);
+}
+
+.cookies-personalizadas-precio span {
+    color: #666;
+
+    font-size: 0.9rem;
+}
+
+.cookies-personalizadas-precio strong {
+    color: var(--color-primary);
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   BOTÓN AGREGAR
+========================================= */
+
+#btn-agregar-cookies-personalizadas {
+    width: 100%;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #e8b7c3;
+
+    color: #fff;
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(216, 143, 163, 0.28);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#btn-agregar-cookies-personalizadas:hover {
+    background: #d88fa3;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 11px 22px rgba(216, 143, 163, 0.35);
+}
+
+
+/* =========================================
+   VOLVER
+========================================= */
+
+.cookies-personalizadas-page
+.btn-volver-container {
+    margin-top: 35px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .cookies-personalizadas-page {
+        padding: 70px 30px;
+    }
+
+    .cookies-personalizadas-card {
+        grid-template-columns: 1fr;
+    }
+
+    .cookies-personalizadas-imagen {
+        height: 450px;
+        min-height: 450px;
+    }
+
+    .cookies-personalizadas-imagen img {
+        position: relative;
+    }
+
+    .cookies-personalizadas-contenido {
+        padding: 35px 30px;
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    .cookies-personalizadas-page {
+        padding: 60px 18px;
+    }
+
+    .cookies-personalizadas-card {
+        border-radius: 24px;
+    }
+
+    .cookies-personalizadas-imagen {
+        height: 330px;
+        min-height: 330px;
+    }
+
+    .cookies-personalizadas-contenido {
+        padding: 28px 18px;
+    }
+
+    .cookies-personalizadas-header h2 {
+        font-size: 1.7rem;
+    }
+
+}
+
+/* =========================================
+   FIX IMAGEN COOKIES PERSONALIZADAS
+   OCUPA TODA LA ALTURA DE LA CARD
+========================================= */
+
+.cookies-personalizadas-card {
+    display: grid !important;
+    grid-template-columns: 45% 55% !important;
+    align-items: stretch !important;
+    overflow: hidden !important;
+}
+
+.cookies-personalizadas-imagen {
+    position: relative !important;
+
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    align-self: stretch !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+}
+
+.cookies-personalizadas-imagen img {
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.cookies-personalizadas-contenido {
+    height: auto !important;
+    align-self: stretch !important;
+}

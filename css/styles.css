@@ -346,11 +346,13 @@ header {
     box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
 
-.btn-volver-container{
+.btn-volver-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 40px;
+    grid-column: 1 / -1;
 }
 /* =========================
    VALIDACIONES FORMULARIOS
@@ -570,11 +572,69 @@ textarea::placeholder{
     color: var(--color-primary);
 }
 
+/* DATOS DEL CLIENTE */
+
+.carrito-cliente {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.carrito-cliente label {
+    font-size: 16px;
+    color: var(--color-dark);
+}
+
+.carrito-cliente input,
+.carrito-cliente textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 14px;
+    font-family: var(--font-text);
+    font-size: 15px;
+    resize: none;
+    outline: none;
+}
+
+.carrito-cliente textarea {
+    min-height: 90px;
+}
+
+/* FECHA DEL PEDIDO */
+
+.carrito-fecha {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.carrito-fecha input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 14px;
+    font-family: var(--font-text);
+    font-size: 15px;
+}
+
+.carrito-fecha small {
+    color: #666;
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
 .carrito-acciones {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
+
+
 
 .toast {
     position: fixed;

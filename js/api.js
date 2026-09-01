@@ -1,6 +1,6 @@
 const API_BASE = "https://6a4bc33af5eab0bb6b636c31.mockapi.io";
-const API_PRODUCTOS = `${API_BASE}/productos`;
-const API_CARRITO = `${API_BASE}/carrito`;
+const API_PRODUCTOS = "http://localhost:8080/api/productos";
+const API_CARRITO = "http://localhost:8080/api/carrito";
 
 async function obtenerProductos() {
     try {
@@ -10,6 +10,22 @@ async function obtenerProductos() {
     } catch (error) {
         console.error("Error al obtener productos:", error);
         return [];
+    }
+}
+
+async function obtenerProductoPorId(id) {
+    try {
+        const respuesta = await fetch(`${API_PRODUCTOS}/${id}`);
+
+        if (!respuesta.ok) {
+            throw new Error("No se pudo obtener el producto");
+        }
+
+        return await respuesta.json();
+
+    } catch (error) {
+        console.error("Error al obtener el producto:", error);
+        return null;
     }
 }
 

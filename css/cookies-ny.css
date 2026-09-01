@@ -1,0 +1,491 @@
+/* =========================================
+   COOKIES NY
+========================================= */
+
+.cookies-ny-page {
+    min-height: 100vh;
+    padding: 80px 50px;
+
+    background: linear-gradient(
+        180deg,
+        var(--color-light),
+        var(--color-soft)
+    );
+}
+
+.cookies-ny-card {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: stretch;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 18px 45px rgba(31, 73, 92, 0.12);
+}
+
+.cookies-ny-imagen {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    align-self: stretch;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+.cookies-ny-imagen img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+    max-height: none;
+
+    margin: 0;
+    padding: 0;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.cookies-ny-card:hover .cookies-ny-imagen img {
+    transform: scale(1.02);
+}
+
+.cookies-ny-imagen::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 60px;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(255, 255, 255, 0.12)
+    );
+
+    pointer-events: none;
+}
+
+.cookies-ny-contenido {
+    padding: 38px 42px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: auto;
+
+    align-self: stretch;
+
+    background: transparent;
+}
+
+.cookies-ny-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cookies-ny-header h2 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-title);
+
+    color: var(--color-primary);
+
+    font-size: 2rem;
+}
+
+.cookies-ny-header p {
+    margin: 0 0 14px;
+
+    color: #555;
+
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.cookies-ny-minimo {
+    display: inline-block;
+
+    padding: 7px 16px;
+
+    background: #f3c0cd;
+
+    color: var(--color-primary);
+
+    border-radius: 30px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.cookies-ny-lista {
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+
+    width: 100%;
+}
+
+.cookies-ny-variedad {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    width: 100%;
+
+    padding: 10px 12px 10px 18px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid rgba(232, 183, 195, 0.35);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 4px 12px rgba(31, 73, 92, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.cookies-ny-variedad:hover {
+    transform: translateX(3px);
+
+    border-color: rgba(216, 143, 163, 0.6);
+
+    box-shadow:
+        0 6px 16px rgba(31, 73, 92, 0.08);
+}
+
+.cookies-ny-variedad-nombre {
+    color: var(--color-primary);
+
+    font-size: 0.93rem;
+    font-weight: 600;
+
+    line-height: 1.2;
+}
+
+.cookies-ny-contador {
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 4px 6px;
+
+    background: #fff;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cookies-ny-btn {
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #e8b7c3;
+
+    color: white;
+
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.cookies-ny-btn:hover {
+    background: #d88fa3;
+    transform: scale(1.08);
+}
+
+.cookies-ny-cantidad {
+    min-width: 20px;
+
+    text-align: center;
+
+    color: var(--color-primary);
+
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.cookies-ny-resumen {
+    margin-top: 24px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(31, 73, 92, 0.10);
+
+    text-align: center;
+}
+
+.cookies-ny-resumen p {
+    margin: 0 0 15px;
+
+    color: #555;
+
+    font-size: 0.95rem;
+}
+
+#cookies-ny-total {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+#btn-agregar-cookies-ny {
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    background: #e8b7c3;
+
+    color: white;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 18px rgba(216, 143, 163, 0.28);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#btn-agregar-cookies-ny:hover:not(:disabled) {
+    background: #d88fa3;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 11px 22px rgba(216, 143, 163, 0.35);
+}
+
+#btn-agregar-cookies-ny:disabled {
+    background: #d8d8d8;
+
+    color: #999;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+
+    opacity: 0.8;
+}
+
+.cookies-ny-page .btn-volver-container {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.cookies-ny-page .btn-volver {
+    display: inline-block;
+
+    padding: 11px 24px;
+
+    border-radius: 30px;
+
+    background: #eea7bd;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    box-shadow:
+        0 8px 18px rgba(219, 139, 163, 0.2);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.cookies-ny-page .btn-volver:hover {
+    transform: translateY(-2px);
+
+    background: #dc91a8;
+}
+
+
+@media (max-width: 950px) {
+
+    .cookies-ny-page {
+        padding: 70px 30px;
+    }
+
+    .cookies-ny-card {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+
+    .cookies-ny-imagen {
+        min-height: 500px;
+    }
+
+    .cookies-ny-imagen::after {
+        display: none;
+    }
+
+    .cookies-ny-contenido {
+        padding: 35px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .cookies-ny-page {
+        padding: 60px 18px;
+    }
+
+    .cookies-ny-card {
+        border-radius: 24px;
+    }
+
+    .cookies-ny-imagen {
+        min-height: 420px;
+    }
+
+    .cookies-ny-contenido {
+        padding: 28px 18px;
+    }
+
+    .cookies-ny-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .cookies-ny-variedad {
+        padding: 9px 9px 9px 14px;
+    }
+
+    .cookies-ny-variedad-nombre {
+        font-size: 0.85rem;
+    }
+
+    .cookies-ny-contador {
+        gap: 5px;
+    }
+
+    .cookies-ny-btn {
+        width: 28px;
+        height: 28px;
+
+        font-size: 1rem;
+    }
+}
+
+/* =========================================
+   FIX FOTO COOKIES NY
+   OCUPA TODA LA ALTURA DE LA CARD
+========================================= */
+
+.cookies-ny-card {
+    display: grid !important;
+    grid-template-columns: 45% 55% !important;
+    align-items: stretch !important;
+}
+
+.cookies-ny-imagen {
+    position: relative !important;
+
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+
+    align-self: stretch !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+}
+
+.cookies-ny-imagen img {
+    position: absolute !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    min-height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.cookies-ny-contenido {
+    height: auto !important;
+    align-self: stretch !important;
+}

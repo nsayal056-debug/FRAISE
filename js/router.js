@@ -7,6 +7,14 @@ const routes = {
     "/cheesecakes": "views/cheesecakes.html",
     "/tartas": "views/tartas.html",
     "/tortas-basicas": "views/tortas-basicas.html",
+    "/shots": "views/shots.html",
+    "/mini-pasteleria": "views/mini-pasteleria.html",
+    "/mini-delicias": "views/mini-delicias.html",
+    "/alfajorcitos": "views/alfajorcitos.html",
+    "/dulces-personalizados": "views/dulces-personalizados.html",
+    "/tortas-personalizadas": "views/tortas-personalizadas.html",
+    "/cookies-ny": "views/cookies-ny.html",
+    "/cookies-personalizadas": "views/cookies-personalizadas.html",
     "/alta": "views/alta.html",
     "/contacto": "views/contacto.html",
     "/nosotros": "views/nosotros.html",
@@ -37,7 +45,10 @@ const routes = {
 async function cargarVista() {
     const hash = location.hash || "#/";
     const ruta = hash.replace("#", "");
-    const archivo = routes[ruta] || routes["/"];
+    const esProducto = ruta.startsWith("/producto/");
+    const archivo = esProducto
+    ? "views/producto-detalle.html"
+    : routes[ruta] || routes["/"];
 
     try {
         const respuesta = await fetch(archivo);
@@ -60,9 +71,56 @@ async function cargarVista() {
 
 function inicializarVista(ruta) {
 
-    if (ruta === "/" || ruta === "/productos") {
-        renderizarProductos();
-    }
+    if (ruta.startsWith("/producto/")) {
+    const id = ruta.split("/")[2];
+    inicializarProductoDetalle(id);
+}
+
+    if (ruta === "/tortas-modernas") {
+    renderizarProductos("Tortas modernas");
+}
+
+    if (ruta === "/tartas") {
+    renderizarProductos("Tartas");
+}
+
+    if (ruta === "/tortas-basicas") {
+    renderizarProductos("Tortas básicas");
+}
+
+    if (ruta === "/cheesecakes") {
+    renderizarProductos("Cheesecakes");
+}
+
+if (ruta === "/shots") {
+    cargarShots();
+}
+
+if (ruta === "/dulces-personalizados") {
+    cargarDulcesPersonalizados();
+}
+
+if (ruta === "/cookies-ny") {
+    cargarCookiesNY();
+}
+
+if (ruta === "/cookies-personalizadas") {
+    cargarCookiesPersonalizadas();
+}
+
+if (ruta === "/cookies-personalizadas") {
+    renderizarProductos("Cookies personalizadas");
+}
+
+if (ruta === "/mini-delicias") {
+    cargarMiniDelicias();
+}
+
+if (ruta === "/alfajorcitos") {
+    cargarAlfajorcitos();
+}
+
+
 
     if (ruta === "/alta") {
         inicializarFormularioAlta();

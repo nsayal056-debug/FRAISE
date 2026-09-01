@@ -1,0 +1,465 @@
+/* =========================
+   MINI DELICIAS
+========================= */
+
+.mini-delicias-page {
+    min-height: 100vh;
+    padding: 80px 60px;
+
+    background: linear-gradient(
+        180deg,
+        var(--color-light),
+        var(--color-soft)
+    );
+}
+
+
+/* =========================
+   INFORMACIÓN SUPERIOR
+========================= */
+
+.mini-delicias-info {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+    padding: 20px 30px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(31, 73, 92, 0.08);
+}
+
+
+.mini-delicias-info h2 {
+    margin: 0 0 6px;
+
+    font-family: var(--font-title);
+    color: var(--color-primary);
+
+    font-size: 1.45rem;
+}
+
+
+.mini-delicias-info p {
+    margin: 0 0 10px;
+
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+.mini-delicias-info span {
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    background: #f3c0cd;
+
+    border-radius: 20px;
+
+    color: var(--color-primary);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+/* =========================
+   CONTENEDOR DE CARDS
+========================= */
+
+#mini-delicias-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 260px));
+
+    justify-content: center;
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+#mini-delicias-container .mini-delicia-card {
+    position: relative;
+
+    width: 100%;
+    height: 380px;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    background: transparent;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+#mini-delicias-container .mini-delicia-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================
+   IMAGEN
+   OCUPA TODA LA CARD
+========================= */
+
+#mini-delicias-container
+.mini-delicia-card
+.mini-delicia-imagen {
+
+    position: absolute !important;
+
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: block !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+
+    z-index: 0;
+
+    transition: transform 0.45s ease;
+}
+
+
+#mini-delicias-container
+.mini-delicia-card:hover
+.mini-delicia-imagen {
+
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   DEGRADADO SOBRE LA FOTO
+========================= */
+
+#mini-delicias-container .mini-delicia-card::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 48%;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.78) 0%,
+        rgba(0, 0, 0, 0.48) 40%,
+        rgba(0, 0, 0, 0.18) 70%,
+        rgba(0, 0, 0, 0) 100%
+    );
+
+    z-index: 1;
+
+    pointer-events: none;
+}
+
+
+/* =========================
+   NOMBRE DEL PRODUCTO
+========================= */
+
+#mini-delicias-container .mini-delicia-card h2 {
+    position: absolute;
+
+    left: 20px;
+    right: 15px;
+
+    bottom: 72px;
+
+    z-index: 2;
+
+    margin: 0;
+
+    color: white;
+
+    font-family: var(--font-title);
+
+    font-size: 1.5rem;
+
+    line-height: 1.1;
+
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================
+   CONTADOR
+========================= */
+
+#mini-delicias-container .mini-delicia-contador {
+    position: absolute;
+
+    left: 20px;
+    bottom: 20px;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 6px 10px;
+
+    border-radius: 30px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    backdrop-filter: blur(5px);
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   BOTONES + Y -
+========================= */
+
+.mini-delicia-btn {
+    width: 34px;
+    height: 34px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #e8b7c3;
+
+    color: white;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.mini-delicia-btn:hover {
+    background: #d88fa3;
+
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   NÚMERO DEL CONTADOR
+========================= */
+
+.mini-delicia-cantidad {
+    min-width: 22px;
+
+    text-align: center;
+
+    color: var(--color-primary);
+
+    font-weight: 700;
+
+    font-size: 1rem;
+}
+
+
+/* =========================
+   RESUMEN
+========================= */
+
+.mini-delicias-resumen {
+    max-width: 520px;
+
+    margin: 45px auto 0;
+
+    padding: 28px 30px;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+    backdrop-filter: blur(6px);
+}
+
+
+.mini-delicias-resumen h2 {
+    margin: 0 0 8px;
+
+    font-family: var(--font-title);
+
+    font-size: 2rem;
+
+    color: var(--color-primary);
+}
+
+
+.mini-delicias-resumen p {
+    margin: 0 0 22px;
+
+    font-size: 1rem;
+
+    color: #555;
+}
+
+
+#mini-delicias-total {
+    font-weight: 700;
+
+    color: var(--color-primary);
+}
+
+
+/* =========================
+   BOTÓN AGREGAR AL CARRITO
+========================= */
+
+#btn-agregar-mini-delicias {
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    background: #e8b7c3;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 18px rgba(216, 143, 163, 0.28);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+#btn-agregar-mini-delicias:hover:not(:disabled) {
+    background: #d88fa3;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 24px rgba(216, 143, 163, 0.35);
+}
+
+
+/* =========================
+   BOTÓN DESACTIVADO
+========================= */
+
+#btn-agregar-mini-delicias:disabled {
+    background: #d8d8d8;
+
+    color: #999;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+
+    opacity: 0.8;
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .mini-delicias-page {
+        padding: 70px 30px;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .mini-delicias-page {
+        padding: 60px 20px;
+    }
+
+
+    #mini-delicias-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    #mini-delicias-container .mini-delicia-card {
+        max-width: 300px;
+
+        margin: 0 auto;
+    }
+
+
+    .mini-delicias-info,
+    .mini-delicias-resumen {
+        padding: 20px;
+    }
+
+}

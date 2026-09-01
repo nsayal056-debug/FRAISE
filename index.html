@@ -19,6 +19,14 @@
     <link rel="stylesheet" href="./css/alta.css">
     <link rel="stylesheet" href="./css/frambali.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/producto-detalle.css">
+    <link rel="stylesheet" href="./css/shots.css">
+    <link rel="stylesheet" href="./css/mini-delicias.css">
+    <link rel="stylesheet" href="./css/alfajorcitos.css">
+    <link rel="stylesheet" href="./css/dulces-personalizados.css">
+    <link rel="stylesheet" href="./css/cookies-ny.css">
+    <link rel="stylesheet" href="./css/tortas-personalizadas.css">
+    <link rel="stylesheet" href="./css/cookies-personalizadas.css">
     
 
     <!-- Google Fonts -->
@@ -100,16 +108,68 @@
             <button type="button" class="carrito-cerrar" id="cerrar-carrito" aria-label="Cerrar carrito">×</button>
             <h2 id="carrito-titulo">Mi carrito</h2>
             <div id="carrito-lista" class="carrito-lista"></div>
-            <div class="carrito-resumen">
-                <strong>Total:</strong>
-                <span id="carrito-total">$0</span>
-            </div>
-            <div class="carrito-acciones">
-                <button type="button" id="vaciar-carrito" class="btn-secundario">Vaciar carrito</button>
-                <button type="button" id="confirmar-carrito" class="btn-enviar">Confirmar pedido</button>
-            </div>
+           <div class="carrito-resumen">
+        <strong>Total:</strong>
+        <span id="carrito-total">$0</span>
+    </div>
+
+    <div class="carrito-cliente">
+
+    <label for="cliente-nombre">Nombre</label>
+    <input
+        type="text"
+        id="cliente-nombre"
+        placeholder="Tu nombre"
+        required
+    >
+
+    <label for="cliente-telefono">Teléfono</label>
+    <input
+        type="tel"
+        id="cliente-telefono"
+        placeholder="Ej: 2478 123456"
+        required
+    >
+
+    <label for="cliente-observaciones">
+        Observaciones
+    </label>
+
+    <textarea
+        id="cliente-observaciones"
+        placeholder="Ej: decoración, mensaje, colores, etc."
+        rows="3"
+    ></textarea>
+
+</div>
+
+    <div class="carrito-fecha">
+        <label for="fecha-entrega">
+        ¿Para qué fecha necesitás tu pedido?
+        </label>
+
+        <input
+        type="date"
+        id="fecha-entrega"
+        required>
+
+    <small id="mensaje-fecha">
+        Los pedidos deben realizarse con al menos 72 horas de anticipación.
+    </small>
+</div>
+
+<div class="carrito-acciones">
+    <button type="button" id="vaciar-carrito" class="btn-secundario">
+        Vaciar carrito
+    </button>
+
+    <button type="button" id="confirmar-carrito" class="btn-enviar">
+        Confirmar pedido
+    </button>
+</div>
         </aside>
     </div>
+
 
     <div id="toast" class="toast"></div>
 
@@ -186,6 +246,13 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/api.js"></script>
+    <script src="./js/shots.js"></script>
+    <script src="./js/mini-delicias.js"></script>
+    <script src="./js/alfajorcitos.js"></script>
+    <script src="./js/dulces-personalizados.js"></script>
+    <script src="./js/cookies-ny.js"></script>
+    <script src="./js/tortas-personalizadas.js"></script>
+    <script src="./js/cookies-personalizadas.js"></script>
     <script src="./js/router.js"></script>
 
 </body>

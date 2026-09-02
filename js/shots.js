@@ -220,7 +220,7 @@ function activarAgregarShots() {
 
             nombre: "Shots Dulces",
 
-            foto: "./img/shots/shot-frutos-rojos.png",
+            foto: "./img/Shots/shot-frutos-rojos.png",
 
             cantidadSeleccionada: total,
 

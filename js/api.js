@@ -1,6 +1,6 @@
 const API_BASE = "https://6a4bc33af5eab0bb6b636c31.mockapi.io";
-const API_PRODUCTOS = "http://localhost:8080/api/productos";
-const API_CARRITO = "http://localhost:8080/api/carrito";
+const API_PRODUCTOS = "https://fraise-au3e.onrender.com/api/productos";
+const API_CARRITO = "https://fraise-au3e.onrender.com/api/carrito";
 
 async function obtenerProductos() {
     try {

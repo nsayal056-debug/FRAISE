@@ -33,7 +33,7 @@ const productos = [
       }
     ],
     disponible: true,
-    foto: "./img/Tortas Basicas/Brownie.png"
+    foto: "./img/Tortas Basicas/brownie.png"
   },
 
   {
@@ -61,7 +61,7 @@ const productos = [
       }
     ],
     disponible: true,
-    foto: "./img/Tortas Basicas/Matilda.png"
+    foto: "./img/Tortas Basicas/matilda.png"
   },
 
   {
@@ -89,7 +89,7 @@ const productos = [
       }
     ],
     disponible: true,
-    foto: "./img/Tortas Basicas/Choco Oreo.png"
+    foto: "./img/Tortas Basicas/choco Oreo.png"
   },
 
   {
@@ -117,7 +117,7 @@ const productos = [
       }
     ],
     disponible: true,
-    foto: "./img/Tortas Basicas/Chocotorta.png"
+    foto: "./img/Tortas Basicas/chocoTorta.png"
   },
 
   {
@@ -140,7 +140,7 @@ const productos = [
       }
     ],
     disponible: true,
-    foto: "./img/Tortas Basicas/Rogel.png"
+    foto: "./img/Tortas Basicas/rogel.png"
   },
 
   {

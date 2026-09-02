@@ -332,3 +332,24 @@
         height: 260px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .mini-pasteleria-card {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .mini-pasteleria-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .mini-pasteleria-card h2 {
+        bottom: 22px;
+        left: 25px;
+        font-size: 2rem;
+    }
+}

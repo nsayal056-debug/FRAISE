@@ -568,34 +568,40 @@ const fechaFormateada =
 console.log("Emoji saludo:", emoji.saludo);
 console.log("Emoji codificado:", encodeURIComponent(emoji.saludo));
 
- const detalleProductos = carrito
-    .map(item => {
+const detalleProductos = carrito
+    .map((item, index) => {
+
+        const numeroProducto = index + 1;
 
         const esEspecial =
             item.cantidadSeleccionada &&
             Array.isArray(item.variedadesSeleccionadas);
 
-        // MINI DELICIAS / ALFAJORCITOS
-if (esEspecial) {
+        // PRODUCTOS PERSONALIZADOS / ESPECIALES
+        if (esEspecial) {
 
-    const variedades = item.variedadesSeleccionadas
-        .map(variedad => `• ${variedad}`)
-        .join("\n");
+            const detalles = item.variedadesSeleccionadas
+                .map(detalle => `• ${detalle}`)
+                .join("\n");
 
-    return [
-        `Producto: ${item.nombre.toLowerCase()}`,
-        `Cantidad: ${item.cantidadSeleccionada}`,
-        "",
-        "*Variedades elegidas:*",
-        variedades,
-        "",
-        "Precio: A consultar"
-    ].join("\n");
-}
+            return [
+                "━━━━━━━━━━━━━━━━━━━━",
+                `*PRODUCTO ${numeroProducto}* 🤍`,
+                `*${item.nombre.toUpperCase()}*`,
+                "",
+                `Cantidad: ${item.cantidadSeleccionada}`,
+                "",
+                "*Detalles del producto:*",
+                detalles,
+                "",
+                "*Precio: A consultar*",
+                "━━━━━━━━━━━━━━━━━━━━"
+            ].join("\n");
+        }
 
         // PRODUCTOS NORMALES
         const tamaño = item.tamañoSeleccionado
-            ? `\nTamaño: ${item.tamañoSeleccionado}`
+            ? `Tamaño: ${item.tamañoSeleccionado}`
             : "";
 
         const precioTexto =
@@ -607,13 +613,28 @@ if (esEspecial) {
             item.precio != null
                 ? formatoPrecio(
                     Number(item.precio) * item.cantidad
-                  )
+                )
                 : "A consultar";
 
-        return `*${item.nombre.toUpperCase()}* 🍰${tamaño}
-Cantidad: ${item.cantidad}
-Precio: ${precioTexto}
-Subtotal: ${subtotalTexto}`;
+        const lineas = [
+            "━━━━━━━━━━━━━━━━━━━━",
+            `*PRODUCTO ${numeroProducto}* 🤍`,
+            `*${item.nombre.toUpperCase()}*`,
+            "",
+            `Cantidad: ${item.cantidad}`
+        ];
+
+        if (tamaño) {
+            lineas.push(tamaño);
+        }
+
+        lineas.push(
+            `Precio: ${precioTexto}`,
+            `Subtotal: ${subtotalTexto}`,
+            "━━━━━━━━━━━━━━━━━━━━"
+        );
+
+        return lineas.join("\n");
     })
     .join("\n\n");
 

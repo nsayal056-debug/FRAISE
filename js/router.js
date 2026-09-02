@@ -100,16 +100,16 @@ if (ruta === "/dulces-personalizados") {
     cargarDulcesPersonalizados();
 }
 
+if (ruta === "/tortas-personalizadas") {
+    cargarTortasPersonalizadas();
+}
+
 if (ruta === "/cookies-ny") {
     cargarCookiesNY();
 }
 
 if (ruta === "/cookies-personalizadas") {
     cargarCookiesPersonalizadas();
-}
-
-if (ruta === "/cookies-personalizadas") {
-    renderizarProductos("Cookies personalizadas");
 }
 
 if (ruta === "/mini-delicias") {

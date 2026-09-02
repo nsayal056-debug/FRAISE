@@ -1,27 +1,27 @@
 const shots = [
     {
         nombre: "Cheesecake Frutos Rojos",
-        imagen: "./img/shots/shot-frutos-rojos.png"
+        imagen: "./img/Shots/shot-frutos-rojos.png"
     },
     {
         nombre: "Chocotorta",
-        imagen: "./img/shots/shot-chocotorta.png"
+        imagen: "./img/Shots/shot-chocotorta.png"
     },
     {
         nombre: "Oreo",
-        imagen: "./img/shots/shot-oreo.png"
+        imagen: "./img/Shots/shot-oreo.png"
     },
     {
         nombre: "Brownie",
-        imagen: "./img/shots/shot-brownie.png"
+        imagen: "./img/Shots/shot-brownie.png"
     },
     {
         nombre: "Frutilla",
-        imagen: "./img/shots/shot-frutilla.png"
+        imagen: "./img/Shots/shot-frutilla.png"
     },
     {
         nombre: "Tiramisú",
-        imagen: "./img/shots/shot-tiramisu.png"
+        imagen: "./img/Shots/shot-tiramisu.png"
     }
 ];
 

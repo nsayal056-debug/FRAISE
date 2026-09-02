@@ -335,21 +335,21 @@
 
 @media (max-width: 768px) {
 
-    .mini-pasteleria-card {
-        height: auto;
-        aspect-ratio: 4 / 3;
+    .categorias .mini-pasteleria-card {
+        height: 260px !important;
+        aspect-ratio: auto !important;
     }
 
-    .mini-pasteleria-card img {
+    .categorias .mini-pasteleria-card img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center;
+        object-position: center 45%;
     }
 
-    .mini-pasteleria-card h2 {
-        bottom: 22px;
-        left: 25px;
-        font-size: 2rem;
+    .categorias .mini-pasteleria-card h2 {
+        bottom: 20px;
+        left: 22px;
+        font-size: 1.8rem;
     }
 }
